@@ -16,20 +16,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    analyzeandsyncdata.cpp \
-    influxdata.cpp \
-    main.cpp \
-    mainwindow.cpp \
-    output.cpp \
-    sqldata.cpp
+    cpp\analyzeandsyncdata.cpp \
+    cpp\influxdata.cpp \
+    cpp\main.cpp \
+    cpp\mainwindow.cpp \
+    cpp\output.cpp \
+    cpp\sqldata.cpp
 
 HEADERS += \
-    analyzeandsyncdata.h \
-    globalHeader.h \
-    influxdata.h \
-    mainwindow.h \
-    output.h \
-    sqldata.h
+    hpp\analyzeandsyncdata.h \
+    hpp\globalHeader.h \
+    hpp\influxdata.h \
+    hpp\mainwindow.h \
+    hpp\output.h \
+    hpp\sqldata.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
