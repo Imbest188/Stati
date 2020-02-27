@@ -1,0 +1,13 @@
+#ifndef GLOBALHEADER_H
+#define GLOBALHEADER_H
+
+#include <QVector>
+#include <QString>
+
+struct cell
+{
+    QString cellName;
+    QVector<int> Data;
+};
+
+#endif // GLOBALHEADER_H

@@ -1,0 +1,16 @@
+#ifndef INFLUXDATA_H
+#define INFLUXDATA_H
+
+#include <QVector>
+#include <QString>
+
+
+class InfluxData
+{
+public:
+    InfluxData();
+    
+    QVector<int> getData();
+};
+
+#endif // INFLUXDATA_H

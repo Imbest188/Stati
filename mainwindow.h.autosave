@@ -1,0 +1,29 @@
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
+
+#include <QMainWindow>
+
+#include "analyzeandsyncdata.h"
+#include "influxdata.h"
+#include "output.h"
+#include "sqldata.h"
+#include "globalHeader.h"
+
+
+
+class MainWindow : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    MainWindow(QWidget *parent = nullptr);
+    ~MainWindow();
+    
+    
+private:
+    
+    int getStats();
+    
+    QVector <cell> processed_data;
+};
+#endif // MAINWINDOW_H
